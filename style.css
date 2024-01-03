@@ -15,6 +15,7 @@
     align-items: flex-start;
     background-color: #0c0f0d;
     padding: 20px;
+    position: relative;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -73,6 +74,7 @@
     resize: none;
     font-size: 16px;
     flex-grow: 1;
+    white-space: pre-wrap;
 }
 
 @keyframes blink {
@@ -85,4 +87,25 @@
     50% {
         opacity: 1;
     }
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    z-index: 999;
+}
+
+#modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
