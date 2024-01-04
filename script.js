@@ -12,7 +12,7 @@ async function handleProgressBar(progressBarContainer, progressBar, statusElemen
     let progress = 0;
 
     for (let i = 0; i <= 100; i++) {
-        await simulateAsyncOperation(50); // Simulate progress every 50 milliseconds
+        await simulateAsyncOperation(20); // Simulate progress every 50 milliseconds
         progress++;
         progressBar.style.width = progress + '%';
     }
